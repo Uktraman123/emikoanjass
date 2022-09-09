@@ -255,20 +255,20 @@ def info(update: Update, context: CallbackContext):
 
     text = (
         f"╔═━「<b> Appraisal results:</b> 」\n"
-        f"✪ ID: <code>{user.id}</code>\n"
-        f"✪ First Name: {html.escape(user.first_name)}"
+        f"✪ 𝙸𝙳: <code>{user.id}</code>\n"
+        f"✪ 𝙵𝙸𝚁𝚂𝚃 𝙽𝙰𝙼𝙴: {html.escape(user.first_name)}"
     )
 
     if user.last_name:
-        text += f"\n✪ Last Name: {html.escape(user.last_name)}"
+        text += f"\n✪ 𝙻𝙰𝚂𝚃 𝙽𝙰𝙼𝙴: {html.escape(user.last_name)}"
 
     if user.username:
-        text += f"\n✪ Username: @{html.escape(user.username)}"
+        text += f"\n✪ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴: @{html.escape(user.username)}"
 
-    text += f"\n✪ Userlink: {mention_html(user.id, 'link')}"
+    text += f"\n✪ 𝚄𝚂𝙴𝚁𝙻𝙸𝙽𝙺: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\n✪ Presence: <code>{}</code>"
+        _stext = "\n✪ 𝙿𝚁𝙴𝚂𝙴𝙽𝙲𝙴: <code>{}</code>"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -284,7 +284,7 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>𝙷𝙴𝙰𝙻𝚃𝙷:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "Health", url="https://t.me/HEALTHGS/44"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "Disaster", url="https://t.me/HEALTHGS/43")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "Health", u="https://t.me/HEALTHGS/44"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "Disaster", url="https://t.me/HEALTHGS/43")
                         ],
                     ]
                 ),
