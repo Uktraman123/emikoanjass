@@ -236,7 +236,7 @@ def start(update: Update, context: CallbackContext):
             uptime = get_readable_time((time.time() - StartTime))
             update.effective_message.reply_photo(
                 photo = "https://telegra.ph/file/1d2a19a136b2b8575dd2c.jpg",
-               caption = PM_START_TEXT.format(
+                caption = PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
