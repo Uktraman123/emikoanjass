@@ -9,16 +9,16 @@ from EmikoRobot.events import register
 from EmikoRobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/2c13e570944404a6c0d86.jpg"
+PHOTO = "https://telegra.ph/file/b156c7131ce948fccebda.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Emiko Robot.** \n\n"
-  TEXT += "⚪ **I'm Working Properly** \n\n"
-  TEXT += f"⚪ **My Master : [sena-ex](https://t.me/excrybaby)** \n\n"
-  TEXT += f"⚪ **Library Version :** `{telever}` \n\n"
-  TEXT += f"⚪ **Telethon Version :** `{tlhver}` \n\n"
-  TEXT += f"⚪ **Pyrogram Version :** `{pyrover}` \n\n"
-  TEXT += "**Thanks For Adding Me Here ❤️**"
-  BUTTON = [[Button.url("Help", "https://t.me/EmiexRobot?start=help"), Button.url("Support", "https://t.me/emikosupport")]]
+  TEXT = f"**𝙷𝙸 [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Emiko Robot.** \n\n"
+  TEXT += "✮ **𝙸'𝙼 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙿𝚁𝙾𝙿𝙴𝚁𝙻𝚈** \n\n"
+  TEXT += f"✮ **𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 : [sena-ex](https://t.me/excrybaby)** \n\n"
+  TEXT += f"✮ **𝙻𝙸𝙱𝚁𝙰𝚁𝚈 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :** `{telever}` \n\n"
+  TEXT += f"✮ **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :** `{tlhver}` \n\n"
+  TEXT += f"✮ **𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :** `{pyrover}` \n\n"
+  TEXT += "**𝚃𝙷𝙰𝙽𝙺𝚂 𝙵𝙾𝚁 𝙰𝙳𝙳𝙸𝙽𝙶 𝙼𝙴 𝙷𝙴𝚁𝙴 😍**"
+  BUTTON = [[Button.url("Help", "https://t.me/RaisaAkemibot?start=help"), Button.url("Support", "https://t.me/kememlupink")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
