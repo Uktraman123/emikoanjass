@@ -108,7 +108,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(text="⛑️ Help & Commands", url="https://t.me/SmartGoblokbot?start=help"), 
-        InlineKeyboardButto
+        
     ],
     [
         InlineKeyboardButton(text="🤖 Group Support", url="https://t.me/yoc0de"),
