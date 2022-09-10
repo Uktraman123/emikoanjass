@@ -94,7 +94,7 @@ PM_START_TEXT = """
 ┣• 𝙶𝚄𝙽𝙰𝙺𝙰𝙽 𝙿𝙴𝚁𝙸𝙽𝚃𝙰𝙷 » /help « 
 ┣• 𝚄𝙽𝚃𝚄𝙺 𝙼𝙴𝙽𝙶𝙴𝚃𝙰𝙷𝚄𝙸 𝙵𝙸𝚃𝚄𝚁 𝙻𝙴𝙽𝙶𝙺𝙰𝙿 
 ┗━━━━━━━━━━━━━━━━━━━━━━━━ 
-❂ 𝙼𝙰𝙽𝙰𝙶𝙴𝙳 𝚆𝙸𝚃𝙷 𝙱𝚈 : [Raisa](t.me/RaisaAkemi)
+❂ 𝙼𝙰𝙽𝙰𝙶𝙴𝙳 𝚆𝙸𝚃𝙷 𝙱𝚈 : [Idiot](t.me/SmartGoblok)
 ❂ 𝚃𝙷𝙰𝙽𝙺𝚂 𝚃𝙾 : [userbotindo](t.me/userbotindo) 
 ━━━━━━━━━━━━━━━━━━━━━━━━━ 
 ❂ *𝙽𝙰𝙼𝙴*: `{}` 
@@ -108,7 +108,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(text="⛑️ Help & Commands", url="https://t.me/RaisaAkemibot?start=help"), 
-        InlineKeyboardButton(text="💌 Instagram", url="https://instagram.com/nosudouser"),
+        InlineKeyboardButto
     ],
     [
         InlineKeyboardButton(text="🤖 Group Support", url="https://t.me/kememlupink"),
