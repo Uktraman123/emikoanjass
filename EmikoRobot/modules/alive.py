@@ -11,7 +11,7 @@ from EmikoRobot import telethn as tbot
 
 PHOTO = "https://telegra.ph/file/5323d00377327303737ff.jpg"
 
-@register(pattern=("/alive"))
+@register(pattern=("]alive"))
 async def awake(event):
   TEXT = f"**𝙷𝙸 [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Emiko Robot.** \n\n"
   TEXT += "✮ **𝙸'𝙼 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙿𝚁𝙾𝙿𝙴𝚁𝙻𝚈** \n\n"
